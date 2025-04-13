@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - IoT Water Quality Monitoring</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      overflow-y: auto;
+      scroll-behavior: smooth; /* Smooth scrolling */
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 10px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #00c3ff;
+      text-decoration: none;
+      padding: 15px 20px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: rgba(0, 195, 255, 0.3);
+      border-radius: 5px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00c3ff;
+      text-shadow: 0 0 10px #00c3ff;
+      margin: 50px 0;
+      font-size: 3em;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      animation: fadeIn 1s ease;
+    }
+
+    .guide, .system-info {
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.15);
+      transition: transform 0.3s;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .guide:hover, .system-info:hover {
+      transform: scale(1.05);
+    }
+
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 20px; /* Adds space between team members */
+    }
+
+    .member {
+      text-align: center;
+      padding: 20px;
+      border: 2px solid #00c3ff;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.15);
+      width: 200px;
+      transition: transform 0.3s;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1s ease;
+    }
+
+    .member:hover {
+      transform: scale(1.05);
+    }
+
+    .member img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.8em;
+      color: #ccc;
+      padding: 10px 0;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .team {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+  <h1>About Us</h1>
+  <div class="container">
+    <div class="guide">
+      <h2>Our Guide</h2>
+      <div class="member-name">Mrs A.S. Kamte</div>
+      <div class="member-role">Lead Advisor</div>
+      <p>Mrs A.S. Kamte have extensive experience in developing innovative solutions for water quality monitoring.</p>
+    </div>
+
+    <div class="system-info">
+      <h2>System Information</h2>
+      <ul style="list-style: none; padding: 0;">
+        <li>🚰 Real-time water quality monitoring using IoT sensors</li>
+        <li>📊 Data collected from pH, turbidity, humidity, temperature, and gas sensors</li>
+        <li>☁️ Cloud integration with Firebase for data storage and retrieval</li>
+        <li>💻 User-friendly web application for monitoring and control</li>
+      </ul>
+    </div>
+
+    <h2>Meet Our Team</h2>
+    <div class="team">
+      <div class="member">
+        <img src="https://img.freepik.com/premium-photo/memoji-handsome-guy-man-with-glasses-white-background-emoji-cartoon-character_826801-6953.jpg?w=360" alt="Team Member 1">
+        <div class="member-name">Ketan Anil Girmal </div>
+        <div class="member-role">Soft Developer</div>
+        <p>Ketan specializes in IoT solutions and has a passion for creating impactful technologies.</p>
+      </div>
+      <div class="member">
+        <img src="https://img.freepik.com/premium-photo/memoji-handsome-guy-man-with-glasses-white-background-emoji-cartoon-character_826801-6952.jpg" alt="Team Member 2">
+        <div class="member-name">Kshitij Dharmendra kamble </div>
+        <div class="member-role">Data Scientist</div>
+        <p>Kshitij focuses on data analytics and machine learning to enhance monitoring capabilities.</p>
+      </div>
+      <div class="member">
+        <img src="https://img.freepik.com/premium-photo/memoji-handsome-guy-man-with-glasses-white-background-emoji-cartoon-character_826801-6961.jpg" alt="Team Member 3">
+        <div class="member-name">Shridhar Suresh Gavali </div>
+        <div class="member-role">Project Manager</div>
+        <p>Shridhar oversees project implementation, ensuring timely and successful delivery.</p>
+      </div>
+      <div class="member">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ZcscSK4wRjTdHTANlfiU36h7zsEig8sY63AjGoAkPbm5v2g8WWkpV5YD60bKuR42Oww&usqp=CAU" alt="Team Member 4">
+        <div class="member-name">Mayuresh Mahadev Chougule</div>
+        <div class="member-role">UI/UX Designer</div>
+        <p>Mayuresh crafts user experiences that are both intuitive and visually appealing.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 IoT Water Quality Monitoring Team</p>
+  </footer>
+</body>
+</html>
